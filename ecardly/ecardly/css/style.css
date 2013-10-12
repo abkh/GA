@@ -1,0 +1,77 @@
+/* 
+Project Name: Ecard.ly
+Client: General Assembly 
+Author: Christopher Castig | @castig
+Developer @GA in NYC
+*/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack - this sorts out issues with floating blocks */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+body {
+     background-color: #d6d6d6;
+     background-image: url("../images/background.jpg");
+     background-repeat: repeat-x; 
+     /*imgage only repeats across the x-axis (width)*/
+     color: #000000;
+     font-size: 12px;
+}
+
+#container {
+     width: 940px;
+     margin: 0 auto;
+}
+
+/*show an image without actually removing the text, just hiding the text*/
+h1 {
+     text-indent: 100%; 
+     /*push text to out of box*/
+     white-space: nowrap;
+     /*no matter how long the text is keep it on one line*/
+     overflow: hidden;
+     /*hides anything outside the box (i.e. the text)*/
+     width: 216px;
+     height: 213px;
+     background-image: url("../images/logo.png");
+     margin: 0 auto;
+}
+
+article {
+     background-color: #ffffff;
+     padding: 10px;
+     margin: 10px 0;
+}
+
+a {
+     color: #cc6633;
+     text-transform: uppercase;
+     text-decoration: none;
+     font-weight: bold;
+}
+
+h2 {
+     font-size: 20px;
+}
+
+img {
+     float: left;
+     margin-right: 10px;
+}

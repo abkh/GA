@@ -1,0 +1,58 @@
+body {
+	/* set up a background image */
+	background-image: url("../images/pattern1.png");
+	font-family: "helvetica";
+}
+
+
+#container {
+	margin:0 auto;
+	width:976px;
+}
+
+header {
+	background-color: orange;
+	
+}
+
+h1 {
+	color: #ffffff;
+	padding: 15px;
+	font-weight: bold;
+	font-size: 3em;
+	font-family: "georgia";
+}
+
+article {
+	background-color: #ffffff;
+	color: #333333;
+	padding: 20px;
+}
+
+h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+p {
+	font-family: "georgia";
+	font-size: 1em;
+}
+
+.italic {
+		font-style: italic;
+}
+
+.indent {
+	margin:0 100px 20px 100px;
+}
+.red {
+	color: red;
+}
+
+footer {
+	background-color: orange;
+	color: #ffffff;
+	padding: 15px;
+}
+
