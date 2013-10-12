@@ -1,5 +1,37 @@
+#container {
+	width: 960px;
+	margin: 0 auto;
+	background: #CCC;
+}
 
 
+#content {
+	float: left;
+	width: 560px;
+	background-color: #ffffff
+}
+
+.alignleft {
+	float: left;
+	margin: 10px;
+}
 
 
+.sidebar {
+	float: left;
+	width: 200px;
+	background: #F00;
+}
 
+.clear {
+	clear: both;
+}
+
+#header {
+	background: blue;
+	padding: 10px;
+	}
+
+#footer {
+	clear: both;
+}

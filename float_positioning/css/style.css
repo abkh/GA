@@ -1,0 +1,35 @@
+.container {
+	width: 800px;
+	margin: 10px auto;
+	background: #CCC;
+}
+
+.box {
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	padding: 10px;
+	background: blue;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+
+.clearfix:after { /* expands collapsed parent to clear */
+	content: "."; /* add html text of full-stop symbol */
+	display: block; /* sets content to be a block element (witdh of container) */
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}

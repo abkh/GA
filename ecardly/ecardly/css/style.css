@@ -40,6 +40,20 @@ body {
      margin: 0 auto;
 }
 
+main {
+     float: left;
+     width: 640px;
+}
+
+aside {
+     float: left;
+     background: white;
+     width: 290px;
+     margin: 10px 0 0 10px;
+     padding: 10px;
+}
+
+
 /*show an image without actually removing the text, just hiding the text*/
 h1 {
      text-indent: 100%; 
@@ -75,3 +89,9 @@ img {
      float: left;
      margin-right: 10px;
 }
+
+
+.clear {
+     clear: both;
+}
+
