@@ -1,16 +1,102 @@
 
-
 /*****************************/		
 /*        GENERAL             *
 /*****************************/	
 
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
 
 
+body {
+	background-image: url("../images/bg-gradient.jpg");
+	background-repeat: repeat-x;
+}
+
+#container {
+	width: 700px;
+	margin: 0 auto;
+}
+
+article {
+	background-color: #ffffff;
+	padding: 20px;
+}
+
+p {
+	font-family: "helvetica" "arial" sans-serif;
+	font-size: 13px;
+	line-height: 1.5;
+	color: #666666;
+}
 
 
 /*****************************/		
 /*  CSS SPRITE NAVIGATION     *
 /*****************************/	
 	
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
 
+nav ul li {
+	padding: 20px 10px 0 10px;
+	float: left;
+}
+
+nav ul li a {
+	text-indent: 100%; 
+	/*push text to out of box*/
+	white-space: nowrap;
+	/*no matter how long the text is keep it on one line*/
+	overflow: hidden;
+	/*hides anything outside the box (i.e. the text)*/
+	display: block;
+	width: 120px;
+	height: 65px;
+	background-image: url("../images/menu-sprite.jpg");
+}
 	
+nav ul li a:hover {
+	background-position-y: -69px;
+}
+
+nav ul li a.active {
+	background-position-y: 66px;
+}
+
+nav ul li a.about {
+	background-position-x: -124px;
+	width: 121px;
+	height: 65px;
+}
+
+nav ul li a.contact {
+	background-position-x: -249px;
+	width: 165px;
+	height: 65px;
+}
