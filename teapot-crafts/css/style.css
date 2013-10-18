@@ -1,0 +1,94 @@
+body {
+	background-color: #dbdbdb;
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	width: 960px;
+	margin: 0 auto;
+	background-color: #ffffff
+}
+
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+h1 {
+	 text-indent: 100%; 
+	 /*push text to out of box*/
+	 white-space: nowrap;
+	 /*no matter how long the text is keep it on one line*/
+	 overflow: hidden;
+	 /*hides anything outside the box (i.e. the text)*/
+	 width: 400px;
+	 height: 217px;
+	 background-image: url("../images/teapot-crafts-logo-400.png");
+	 margin: 0 auto;
+}
+
+ul {
+	list-style: none;
+}
+
+
+li {
+	display: block;
+	float: left;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+
+nav ul li a {
+	text-indent: 100%; 
+	/*push text to out of box*/
+	white-space: nowrap;
+	/*no matter how long the text is keep it on one line*/
+	overflow: hidden;
+	/*hides anything outside the box (i.e. the text)*/
+	display: block;
+	width: 184px;
+	height: 65px;
+	background-image: url("../images/teapot-crafts-sprite.png");
+	background-position-y: -57px;
+	background-position-x: 8px;
+}
+
+
+nav ul li a:hover {
+	background-position-y: -171px;
+}
+
+
+nav ul li a.aboutnav {
+	background-position-x: -211px;
+}
+
+
+nav ul li a.gallerynav {
+	background-position-x: -398px;
+}
+
+nav ul li a.shopnav {
+	background-position-x: -583px;
+}
+
+
+nav ul li a.contactnav {
+	background-position-x: -787px;
+}
+
+
