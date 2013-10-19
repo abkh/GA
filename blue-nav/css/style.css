@@ -20,6 +20,7 @@
 body {
 	background-image: url("../images/bg-gradient.jpg");
 	background-repeat: repeat-x;
+	background-size: 100%;
 }
 
 #container {
