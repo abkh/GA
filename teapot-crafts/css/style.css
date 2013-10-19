@@ -64,7 +64,6 @@ nav ul li a {
 	height: 65px;
 	background-image: url("../images/teapot-crafts-sprite.png");
 	background-position-y: -57px;
-	background-position-x: 8px;
 }
 
 
@@ -72,6 +71,13 @@ nav ul li a:hover {
 	background-position-y: -171px;
 }
 
+nav ul li a.visited {
+	background-position-y: -171px;
+}
+
+nav ul li a.homenav {
+	background-position-x: 8px;
+}
 
 nav ul li a.aboutnav {
 	background-position-x: -211px;
