@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>A Very Basic Form</title>
+	<link rel="stylesheet" type="text/css" href="css/normalise.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+	<form id="contact-form" method="" action="">
+		<!--Method and action left blank for back end-->
+
+		<h3>Contact Form</h3>
+
+		<div class="field">
+			<label for="name">Name</label>
+			<input type="text" name="name" id="name" placeholder="Your name" class="rounded" />
+		</div>	
+
+		<div class="field">
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email" placeholder="Your email" class="rounded" />
+		</div>	
+
+		<div class="field">
+			<h4>My ride:</h4>
+
+			<input type="checkbox" name="vehicle" id="bike" value="bike" />
+			<label for="bike">Bike</label>
+
+			<input type="checkbox" name="vehicle" id="car" value="car" />
+			<label for="car">Car</label>
+
+			<input type="checkbox" name="vehicle" id="dinosaur" value="dinosaur" />
+			<label for="car">Dinosaur</label>
+		</div>
+		
+		<div class="field">
+			<label for="message">Message</label>
+			<textarea name="message" id="message" class="rounded">Please write your message here</textarea>
+		</div>	
+
+		<div class="field">
+			<label for="gender">Gender:</label>
+			<input type="radio" name="gender" value="male" />Male
+			<input type="radio" name="gender" value="male" />Female
+		</div>
+		
+		<div class="field">
+			<h4>Education</h4>
+			<select name="degree">
+				<option value="-1">Choose One</option> <!--If form returns minus one the db discards this -->
+				<option value="london">London</option>
+				<option value="manchester">Machester</option>
+				<option value="birmingham">Birmingham</option>	
+			</select>	
+		</div>
+
+		<input type="submit" name="" class="button" value="Send" />
+		
+	</form>	
+
+
+</body>
+</html>

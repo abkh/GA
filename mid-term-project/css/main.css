@@ -1,0 +1,888 @@
+! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+ 
+
+
+/*My styles*/
+
+/*Main styles*/
+
+body {
+    width: 100%;
+    background-image: url("../images/background-fixed-new.png");
+    background-repeat:no-repeat; 
+    background-attachment:fixed;
+    margin: 0 auto;
+    color: #a0a0a0;
+}
+
+.container {
+    background-color: rgba(255,255,255,0.7);
+}
+
+p, div p {
+    font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #a0a0a0;
+    margin-bottom: 15px;
+    font-weight: lighter;
+}
+
+.img_p {
+    padding: 4px 5px 0 0;
+    margin-bottom: 15px;
+    width: 200px;
+}
+
+/*Nav styles*/
+
+/*I want to fix the nav but don't know how
+to without messing everything else up*/
+
+nav {
+    width: 720px;
+}
+
+nav ul li {
+    float: left;
+    padding: 25px 20px 20px 20px;
+}
+
+/*Default position*/
+
+nav ul li a {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    background-image: url("../images/nav-sprite.png");
+}
+
+/*Hover position*/
+
+nav ul li a:hover {
+    background-position-y: -50px;
+}
+
+/*Active nav*/
+
+nav ul li a.active {
+    background-position-y: -50px;
+}
+
+/*Each link*/
+
+nav ul li.about a {
+    background-position-x: 0px;
+    height: 37px;
+    width: 66px;
+}
+
+nav ul li.crochet a {
+    background-position-x: -100px;
+    height: 37px;
+    width: 84px;
+}
+
+nav ul li.crafts a {
+    background-position-x: -200px;
+    height: 37px;
+    width: 64px;
+}
+
+nav ul li.weddings a {
+    background-position-x: -300px;
+    height: 37px;
+    width: 103px;
+}
+
+nav ul li.contact a {
+    background-position-x: -450.00000762939453px;
+    height: 37px;
+    width: 82px;
+}
+
+
+
+/*Logo (h1) styles*/
+
+h1 {
+     text-indent: 100%; 
+     /*push text to out of box*/
+     white-space: nowrap;
+     /*no matter how long the text is keep it on one line*/
+     overflow: hidden;
+     /*hides anything outside the box (i.e. the text)*/
+     width: 200px;
+     height: 330px;
+     background-image: url("../images/teapot-crafts-logo-new.png");
+     background-repeat: no-repeat;
+     margin: 20px auto;
+}
+
+.heading {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+/*Social buttons styles*/
+
+#socialmedia {
+    opacity: 0.7;
+}
+
+#socialmedia ul li {
+    float: left;
+}
+
+#socialmedia ul li a {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    height: 59px;
+    width: 59px;
+    background-image: url("../images/socialmedia-sprite.png");
+}
+
+#socialmedia ul li a:hover {
+    background-position-y: -100.01249694824219px;
+}
+
+li.facebook a {
+    background-position-x: -0.00624847412109375px;
+}
+
+li.instagram a {
+    background-position-x: -100.01874542236328px;
+}
+
+li.pinterest a {
+    background-position-x: -200.01874542236328px;
+}
+
+li.twitter a {
+    background-position-x: -300.0187454223633px;
+}
+
+li.facebook, li.twitter {
+    padding: 17px 17px 0 34px;
+}
+
+li.pinterest, li.instagram {
+    padding: 17px 34px 0 17px;
+}
+
+
+/*Image styles*/
+
+
+.main_img {
+    width: 448px;
+    margin: 0 8px 20px 0;
+    border: solid 1px #dbdbdb;
+    padding: 1px;
+}
+
+
+.gallery_img {
+    width: 208px;
+    height: 208px;
+    margin: 0px 8px 20px 0;
+    border: solid 1px #dbdbdb;
+    padding: 1px;
+}
+
+
+/*Footer styles*/
+
+
+#footer_container {
+    background-color: rgba(162, 162, 162, 0.7);
+    width: 960px;
+    margin: 0 auto;
+}
+
+footer p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: right;
+}
+
+.copyright {
+    padding: 15px 15px 15px 0;
+}
+
+
+/*Form styles*/
+
+form h3 {
+    font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #a0a0a0;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+label {
+    font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #a0a0a0;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+input[type="text"], input[type="password"], input[type="email"], textarea, select {
+    border: 1px solid #ccc;
+    padding: 8px 6px;
+    outline: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    font: 14px "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: #a0a0a0;
+    margin: 0;
+    width: 300px;
+    max-width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    background: #fff;
+}
+
+
+
+/*Media Queries*/
+
+/* Tablet Layout: 768px.
+ * Gutters: 24px.
+ * Outer margins: 28px.
+ * Inherits styles from: Default Layout.
+ */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    body {
+        width: 90%;
+        /*background-color: blue;*/
+    }
+
+    .container {
+        width: 90%;
+        /*background-color: red;*/
+        position: relative;
+    }
+
+    h1 {
+     text-indent: 100%; 
+     /*push text to out of box*/
+     white-space: nowrap;
+     /*no matter how long the text is keep it on one line*/
+     overflow: hidden;
+     /*hides anything outside the box (i.e. the text)*/
+     width: 156px;
+     height: 240px;
+     background-image: url("../images/teapot-crafts-logo-tablet.png");
+     background-repeat: no-repeat;
+     margin: 20px auto;
+    }
+
+    .heading {
+        position: absolute;
+        left: 5px;
+        top: 5px;
+    }
+
+    #footer_container {
+        width: 90%;
+    }
+
+    #socialmedia {
+        margin-left: 20px;
+    }
+
+    li.facebook, li.twitter {
+        padding: 0;
+        margin-right: 10px;
+    }
+
+    li.pinterest, li.instagram {
+        padding: 0;
+    }
+
+    nav {
+        width: 80%;
+    }
+
+}
+
+/* Mobile Layout: 320px.
+ * Gutters: 24px.
+ * Outer margins: 34px.
+ * Inherits styles from: Default Layout.*/
+ 
+
+@media only screen and (max-width: 767px) {
+
+    body {
+        width: 90%;
+        min-width: 320px;
+        /*background-color: purple;*/
+    }
+
+    .container {
+        width: 90%;
+        /*background-color: yellow;*/
+        position: relative; 
+    }
+
+    .heading {
+        position: relative;
+
+    }
+
+    #footer_container {
+        width: 90%;
+    }
+
+    nav ul li {
+        float: none;
+        padding-bottom: 0;
+    }
+
+    nav {
+        margin: 20px 0 0 30px;
+    }
+
+    .img_p {
+        width: 90%;
+        margin: 0 5px 15px 20px;
+    }
+
+    .main_img {
+        width: 90%;
+        margin: 0 8px 20px 10px;
+        border: solid 1px #dbdbdb;
+        padding: 1px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+/* Wide Mobile Layout: 480px.
+ * Gutters: 24px.
+ * Outer margins: 22px.
+ * Inherits styles from: Default Layout, Mobile Layout.*/
+ 
+
+@media only screen and (min-width: 465px) and (max-width: 767px) {
+
+    body {
+        width: 90%;
+        /*background-color: purple;*/
+    }
+
+    .container {
+        width: 90%;
+        /*background-color: yellow;*/
+        position: relative; 
+    }
+
+    .heading {
+        position: relative;
+
+    }
+
+    #footer_container {
+        width: 90%;
+    }
+
+    nav ul li {
+        float: none;
+        padding-bottom: 0;
+    }
+
+    nav {
+        margin: 20px 0 0 30px;
+    }
+
+    .img_p {
+        width: 90%;
+        margin: 0 5px 15px 20px;
+    }
+
+    .main_img {
+        width: 90%;
+        margin: 0 8px 20px 10px;
+        border: solid 1px #dbdbdb;
+        padding: 1px;
+    }
+
+
+}
+    
+
+/*
+@media only screen and (min-width: 768px) and (max-width: 958px) {
+
+    body {
+        width: 712px;
+        background-image: url("../images/background-fixed-new.png");
+        background-repeat:no-repeat; 
+        background-attachment:fixed;
+        margin: 0 auto;
+    /*}
+
+    .container {
+        width: 100%;
+        position: relative;
+        padding-bottom: 200px;
+    }
+
+
+    .heading {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    }
+
+    nav {
+        width: 70%
+        margin: 0 auto;
+    }
+
+    nav ul li {
+        padding: 25px 20px 10px 0px;
+    }
+
+    .main_img {
+        width: 280px;
+        margin: 0 8px 30px 20px;
+        border: solid 1px #dbdbdb;
+        padding: 1px;
+    }
+
+    .img_p {
+        font-size: 1em;
+    }
+
+    .img_p_1 {
+        position: absolute;
+        right: 5px;
+        top: 97px;
+        width: 175px;
+    }
+
+    .img_p_2 {
+        position: absolute;
+        right: 5px;
+        top: 160px;
+        width: 175px;
+    }
+
+    .img_p_3 {
+        position: absolute;
+        right: 5px;
+        top: 350px;
+        width: 175px;
+    }
+
+    #socialmedia {
+        margin-left: 35px;
+    }
+
+    li.facebook, li.twitter {
+        padding: 0;
+        margin-right: 10px;
+    }
+
+    li.pinterest, li.instagram {
+        padding: 0;
+    }
+
+    #footer_container {
+        width: 100%;
+    }
+
+}    
+
+
+/* Mobile Layout: 320px.
+ * Gutters: 24px.
+ * Outer margins: 34px.
+ * Inherits styles from: Default Layout.*/
+ 
+
+/*@media only screen and (max-width: 767px) {
+
+    body {
+        width: 252px;
+        background-image: url("../images/background-fixed-new.png");
+        background-repeat:no-repeat; 
+        background-attachment:fixed;
+        margin: 0 auto;*/
+   /* }
+
+    .heading {
+        position: relative;
+    }
+
+    #socialmedia {
+        margin: 0 0 0 85px;
+    }
+
+    li.facebook, li.twitter {
+        padding: 0;
+        margin-right: 10px;
+    }
+
+    li.pinterest, li.instagram {
+        padding: 0;
+    }
+
+    nav {
+        margin: 15px 0 0 115px;;
+    }
+
+    nav ul li {
+        float: none;
+        padding: 25px 20px 10px 0px;
+    }
+
+    .img_p {
+        font-size: 1.25em;
+        margin: 10px;
+    }
+
+    .main_img {
+        width: 252px;
+        margin: 0 20px;
+        border: solid 1px #dbdbdb;
+        padding: 1px;
+    }
+
+    #footer_container {
+        width: 100%;
+    }*/
+
+
+
+
+
+

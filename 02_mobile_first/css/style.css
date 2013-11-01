@@ -1,0 +1,170 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  background: purple;
+  color: #000;
+  font-size: 12px;
+  line-height: 1.4;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+header object {
+  width : 120px;
+  display: block;
+  margin: 20px auto;
+}
+
+nav {
+  background: white;
+  color: black;
+  text-transform: uppercase;
+  margin: 0 auto;
+  width: 70%;
+  font-size: 1.2em;
+}
+  nav a {
+    padding: 10px 0;
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    border-top: 1px solid #cccccc;
+  }
+  nav a:hover{
+    background: #999999;
+    color: white;
+  }
+  nav a:first-child{
+    border-top: none;
+  }
+
+
+
+/******************************************
+/* 480px and up
+/*******************************************/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    body {
+      background-color: green;
+    }
+
+    header object {
+      float: left;
+      margin-left: 30px;
+    }
+
+    nav {
+      float: left;
+      margin: 30px;
+      width: 55%;
+    }
+
+    nav a {
+    padding: 15px 0;
+  }
+
+}
+
+/******************************************
+/* 768px and up
+/*******************************************/
+
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+
+    body {
+      background-color: turquoise;
+    }
+
+    header object {
+      margin: 0 auto;
+      padding: 40px 0 20px 0;
+    }
+
+    nav a {
+      float: left;
+      width: 33%;
+      border: 1px solid #cccccc;
+      padding-right: 0;
+    }  
+
+    nav a:first-child {
+      border: 1px solid #cccccc;
+    }
+   
+}
+
+/******************************************
+/* 991px and up
+/*******************************************/
+
+@media only screen and (min-width: 991px){
+
+    body {
+          background-color: grey;
+        }
+
+    header object {
+          margin: 0 auto;
+          padding: 40px 0 20px 0;
+    }
+
+    nav a {
+          float: left;
+          width: 33%;
+          border: 1px solid #cccccc;
+          padding-right: 0;
+    } 
+
+    nav a:first-child {
+          border: 1px solid #cccccc;
+    }
+
+
+
+
+
+
+
+
+
+

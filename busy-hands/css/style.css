@@ -35,7 +35,7 @@ nav ul li a {
 	color: white;
 	text-decoration: none;
 	vertical-align: middle;
-	padding: 30px 30px 0 0;
+	padding: 30px 30px 28px 30px;
 	display: block;
 }
 
@@ -234,6 +234,10 @@ li.footerlist {
 	margin: 0 auto;
 }
 
-.goodfriends {
+.turquoise {
 	color: turquoise;
+}
+
+li.firstlist {
+	padding-top:0px;
 }

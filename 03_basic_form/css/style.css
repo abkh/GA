@@ -1,0 +1,26 @@
+input {
+	background-color: #dbdbdb;
+	padding: 10px;
+	border: 1px solid #666666;
+	width: 150px;
+}
+
+textarea {
+	background-color: #dbdbdb;
+	padding: 10px;
+	border: 1px solid #666666;
+	height: 150px;
+	width: 150px;
+}
+
+label {
+	font-family: "Georgia" "Times New Roman" serif;
+	display: block;
+}
+
+/*Rounded Corners*/
+.rounded {
+	border-radius: 5px; /* CSS3 */
+	-moz-border-radius: 5px; /* Firefox */
+ 	-webkit-border-radius: 5px; /* Safari, Chrome */
+}
