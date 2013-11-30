@@ -574,6 +574,10 @@ ul#menu li {
         padding: 12px 15px 0 0;
     }
 
+    nav ul li.last-nav {
+        padding: 12px 0px 0 0;
+    }
+
     h1 {
         font-size:25px;
     }
