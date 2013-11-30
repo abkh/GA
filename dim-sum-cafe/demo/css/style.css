@@ -569,7 +569,7 @@ ul#menu li {
 @media only screen and (max-width: 767px) {
 
     nav ul li {
-        font-size: 13px;
+        font-size: 14px;
         font-weight: 400;
         padding: 12px 15px 0 0;
     }
